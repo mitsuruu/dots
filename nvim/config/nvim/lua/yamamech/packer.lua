@@ -39,5 +39,22 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},     -- Required
 		}
 	}
+	use ('rust-lang/rust.vim')
+	use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+
+	use {
+		's1n7ax/nvim-terminal',
+		config = function()
+			vim.o.hidden = true
+			require('nvim-terminal').setup()
+		end,
+	}
+
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons',
+		},
+	}
 
 end)
