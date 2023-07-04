@@ -57,4 +57,26 @@ return require('packer').startup(function(use)
 		},
 	}
 
+	use ({
+		"utilyre/barbecue.nvim",
+		tag = "*",
+		requires = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons",
+		},
+		after = "nvim-web-devicons",
+		config = function()
+			require("barbecue").setup()
+		end,
+	})
+	use 'lewis6991/gitsigns.nvim'
+	use 'romgrk/barbar.nvim'
+	use({
+		"NTBBloodbath/galaxyline.nvim",
+		-- your statusline
+		config = function()
+			require("galaxyline.themes.eviline")
+		end,
+	})
+	use 'andweeb/presence.nvim'
 end)

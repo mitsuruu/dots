@@ -29,5 +29,7 @@ dnf install eww-wayland-git \
 	libinput \
 	libliftoff \
 	waybar-hyprland \
-	xdg-desktop-portal-hyprland -y
+	xdg-desktop-portal-hyprland \
+	kitty \
+	fish -y
 
