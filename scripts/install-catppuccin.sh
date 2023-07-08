@@ -1,9 +1,11 @@
 #!/bin/bash
 
 main() {
+	$(dirname "$0")/install-common.sh
 	check_vars
 	link_config
 	# link_share # This would need some dotfiles to go in ~/.local/share to be useful
+	link_files
 }
 
 function check_vars {
@@ -24,22 +26,38 @@ function check_vars {
 }
 
 function link_config {
-	cd "$(dirname "$0")/../config/"
+	wd=$PWD
+	cd "$(dirname "$0")/../catppuccin-wip/config/"
 
 	for i in *
 	do
 		echo "Creating symlink for $PWD/$i in $XDG_CONFIG_HOME/"
 		ln -sf $PWD/$i $XDG_CONFIG_HOME/
 	done
+	
+	cd $wd
 }
 
 function link_share {
-	cd "$(dirname "$0")/../share/"
+	wd=$PWD
+	cd "$(dirname "$0")/../catppuccin-wip/share/"
 
 	for i in *
 	do
 		echo "Creating symlink for $PWD/$i in $XDG_DATA_HOME/"
 		ln -sf $PWD/$i $XDG_DATA_HOME/
+	done
+
+	cd $wd
+}
+
+function link_files {
+	cd "$(dirname "$0")/../catppuccin-wip/files/"
+
+	for i in $(find $PWD -type f)
+	do
+		echo "Creating symlink for $i in $HOME/.$(realpath --relative-to="$PWD" "$i")"
+		ln -sf $i "$HOME/.$(realpath --relative-to="$PWD" "$i")"
 	done
 }
 
