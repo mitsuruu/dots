@@ -4,7 +4,7 @@ main() {
 	$(dirname "$0")/install-common.sh
 	check_vars
 	link_config
-	# link_share # This would need some dotfiles to go in ~/.local/share to be useful
+	link_share
 	link_files
 }
 
