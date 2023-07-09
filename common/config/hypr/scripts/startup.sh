@@ -6,4 +6,5 @@ hyprpaper &
 mako &
 brave-browser &
 steam &
+lutris &
 kitty
