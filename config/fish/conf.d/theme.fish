@@ -1,0 +1,1 @@
+/home/cameron/Code/dots/catppuccin-wip/files/config/fish/conf.d/theme.fish
