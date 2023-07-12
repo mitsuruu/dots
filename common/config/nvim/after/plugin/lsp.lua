@@ -8,6 +8,7 @@ lsp.setup()
 lsp.ensure_installed({
 	'sumneko_lua',
 	'rust_analyzer',
+	'clangd',
 })
 
 local cmp = require("cmp")

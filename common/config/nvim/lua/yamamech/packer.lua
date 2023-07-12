@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
 	}
 
 	use 'Mofiqul/dracula.nvim'
+	use 'folke/tokyonight.nvim'
 	use { "catppuccin/nvim", as = "catppuccin" }
 	use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 	use ('nvim-treesitter/playground')
