@@ -1,9 +1,2 @@
 **/packer_compiled.lua
 ignore/**
-common/config/nvim/lua/yamamech/theme.lua
-common/config/fish/conf.d/theme.fish
-common/config/kitty/theme.conf
-common/config/nvim/lua/yamamech/theme.lua
-common/config/fish/conf.d/theme.fish
-common/config/kitty/theme.conf
-common/config/hypr/theming.conf
