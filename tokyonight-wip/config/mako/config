@@ -1,13 +1,13 @@
 border-radius=10
 background-color=#16161E
-border-color=#BD93F9
+border-color=#7AA2F7
 border-size=2
 anchor=top-center
 
 [urgency=low]
 background-color=#16161E
 text-color=#C0CAF5
-border-color=#9ECE6A
+border-color=#7AA2F7
 
 [urgency=normal]
 background-color=#16161E

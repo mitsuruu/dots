@@ -7,3 +7,13 @@ common/config/nvim/lua/yamamech/theme.lua
 common/config/fish/conf.d/theme.fish
 common/config/kitty/theme.conf
 common/config/hypr/theming.conf
+common/config/fish/conf.d/theme.fish
+common/config/hypr/theming.conf
+common/config/kitty/themes/Catppuccin-Mocha.conf
+common/config/kitty/themes/tokyonight.conf
+common/config/kitty/theme.conf
+common/config/nvim/lua/yamamech/theme.lua
+tokyonight-wip/share/themes/Tokyonight-Dark-BL-LB/gnome-shell/no-events.svg
+tokyonight-wip/share/themes/Tokyonight-Dark-BL-LB/gnome-shell/no-notifications.svg
+tokyonight-wip/share/themes/Tokyonight-Dark-BL-LB/gnome-shell/process-working.svg
+tokyonight-wip/share/themes/Tokyonight-Dark-BL-LB/metacity-1/metacity-theme-1.xml

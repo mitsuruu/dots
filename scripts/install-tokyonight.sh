@@ -46,6 +46,16 @@ function link_share {
 	do
 		echo "Creating symlink for $PWD/$i in $XDG_DATA_HOME/"
 		ln -sf $PWD/$i $XDG_DATA_HOME/
+		RESULT=$?
+
+		if [ $RESULT -ne 0 ]; then
+			cd $i
+			for j in *
+			do
+				echo "Creating symlink for $PWD/$j in $XDG_DATA_HOME/$i"
+				ln -sf $PWD/$j $XDG_DATA_HOME/$i/
+			done
+		fi
 	done
 
 	cd $wd
